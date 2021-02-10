@@ -2,7 +2,7 @@
   "name": "Agora-Edu-Web",
   "version": "6.0.0",
   "private": true,
-  "homepage": "https://solutions.agora.io/education/web",
+  "homepage": "https://vt-lecturehall.herokuapp.com",
   "main": "./src/index.tsx",
   "agora_electron": {
     "platform": "darwin",

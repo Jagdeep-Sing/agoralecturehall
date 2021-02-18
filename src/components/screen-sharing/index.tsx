@@ -1,8 +1,8 @@
 import React from 'react'
 import { observer } from 'mobx-react'
-import { useRoomStore, useBreakoutRoomStore } from '@/hooks'
+import { useRoomStore, useBreakoutRoomStore } from '../../hooks'
 import { useLocation } from 'react-router-dom';
-import { VideoPlayer } from '@/components/video-player'
+import { VideoPlayer } from '../../components/video-player'
 import './index.scss';
 export const ScreenSharing = () => {
   const location = useLocation()

@@ -1,6 +1,6 @@
 import React from 'react';
 import './student-list.scss';
-import {CustomIcon} from '@/components/icon';
+import {CustomIcon} from '../../components/icon';
 import { observer } from 'mobx-react';
 
 interface CustomIconProps {

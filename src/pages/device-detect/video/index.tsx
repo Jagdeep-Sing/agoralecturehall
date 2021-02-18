@@ -3,11 +3,11 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import { observer } from "mobx-react";
-import { CustomButton } from '@/components/custom-button';
-import { useDeviceStore, useUIStore } from '@/hooks';
-import { RendererPlayer } from '@/components/media-player';
-import { RoomStore } from '@/stores/app';
-import { t } from '@/i18n';
+import { CustomButton } from '../../../components/custom-button';
+import { useDeviceStore, useUIStore } from '../../../hooks';
+import { RendererPlayer } from '../../../components/media-player';
+import { RoomStore } from '../../../stores/app';
+import { t } from '../../../i18n';
 
 export const VideoPage = observer((props: any) => {
 

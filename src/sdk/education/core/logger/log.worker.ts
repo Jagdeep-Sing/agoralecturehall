@@ -1,5 +1,6 @@
 import db from './db';
 
+
 const ctx: DedicatedWorkerGlobalScope = self as any;
 ctx.onmessage = async (evt: any) => {
   if (evt.data) {

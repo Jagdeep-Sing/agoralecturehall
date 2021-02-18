@@ -1,4 +1,4 @@
-import { AppStore } from '@/stores/app';
+import { AppStore } from '../../stores/app';
 import {observable, computed, action} from 'mobx'
 
 export class RecordingStore {

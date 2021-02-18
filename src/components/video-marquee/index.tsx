@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState, useLayoutEffect } from 'react';
-import {VideoPlayer} from '@/components/video-player';
+import {VideoPlayer} from '../../components/video-player';
 import './video-marquee.scss';
-import { AgoraMediaStream } from '@/utils/types';
+import { AgoraMediaStream } from '../../utils/types';
 import { observer } from 'mobx-react';
-import { useRoomStore } from '@/hooks';
+import { useRoomStore } from '../../hooks';
 
 const showScrollbar = () => {
   const $marquee = document.querySelector(".video-marquee .agora-video-view");

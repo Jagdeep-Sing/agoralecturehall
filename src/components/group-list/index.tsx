@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
-import { t } from '@/i18n'
-import { useBreakoutRoomStore } from '@/hooks'
+import { t } from '../../i18n'
+import { useBreakoutRoomStore } from '../../hooks'
 
 export const GroupList = (props: any) => {
 

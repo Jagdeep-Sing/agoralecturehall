@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import { Theme, FormControl, Tooltip } from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
-import {CustomButton} from '@/components/custom-button';
-import { RoleRadio } from '@/components/role-radio';
-import {CustomIcon} from '@/components/icon';
-import {FormInput} from '@/components/form-input';
-import {FormSelect} from '@/components/form-select';
-import {LangSelect} from '@/components/lang-select';
+import {CustomButton}from'../components/custom-button';
+import { RoleRadio } from'../components/role-radio';
+import {CustomIcon} from '../components/icon';
+import {FormInput} from  '../components/form-input';
+import {FormSelect} from '../components/form-select';
+import {LangSelect} from '../components/lang-select';
 import {useHistory} from 'react-router-dom';
-import {GithubIcon} from '@/components/github-icon';
+import {GithubIcon} from '../components/github-icon';
 import { t } from '../i18n';
-import { useUIStore, useRoomStore, useAppStore } from '@/hooks';
-import { UIStore } from '@/stores/app';
-import { GlobalStorage } from '@/utils/custom-storage';
-import { EduManager } from '@/sdk/education/manager';
-import {isElectron} from '@/utils/platform';
+import { useUIStore, useRoomStore, useAppStore } from '../hooks';
+import { UIStore } from '../stores/app';
+import { GlobalStorage } from '../utils/custom-storage';
+import { EduManager } from '../sdk/education/manager';
+import {isElectron} from '../utils/platform';
 
 const useStyles = makeStyles ((theme: Theme) => ({
   formControl: {

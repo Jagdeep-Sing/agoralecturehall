@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
-import { t } from '@/i18n';
+import { t } from '../../../i18n';
 import './index.scss';
 import * as moment from 'moment';
 import { observer } from 'mobx-react';
-import { NavController } from '@/components/nav';
+import { NavController } from '../../../components/nav';
 import { Link, Route, useLocation, useParams, useHistory } from 'react-router-dom';
-import { Loading } from '@/components/loading';
-import { AutoplayToast } from '@/components/autoplay-toast';
+import { Loading } from '../../../components/loading';
+import { AutoplayToast } from '../../../components/autoplay-toast';
 import { makeStyles, Theme, createStyles, TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Button } from '@material-ui/core';
-import { useUIStore, useBreakoutRoomStore } from '@/hooks';
+import { useUIStore, useBreakoutRoomStore } from '../../../hooks';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

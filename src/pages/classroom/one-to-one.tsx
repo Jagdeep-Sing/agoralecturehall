@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {VideoPlayer} from '@/components/video-player';
-import {ChatBoard} from '@/components/chat/board';
-import { NetlessBoard } from '@/components/netless-board';
-import { ScreenSharing } from '@/components/screen-sharing';
-import { useRoomStore } from '@/hooks';
+import {VideoPlayer} from '../../components/video-player';
+import {ChatBoard} from '../../components/chat/board';
+import { NetlessBoard } from '../../components/netless-board';
+import { ScreenSharing } from '../../components/screen-sharing';
+import { useRoomStore } from '../../hooks';
 import { observer } from 'mobx-react';
 
 export const OneToOne = observer(() => {

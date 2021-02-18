@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import {observer} from 'mobx-react'
-import { useBreakoutRoomStore, useBoardStore } from '@/hooks'
-import { EduMediaStream } from '@/stores/app/room'
-import { t } from '@/i18n'
-import { ChatPanel } from '@/components/chat/panel'
-import { StudentList } from '@/components/student-list'
+import { useBreakoutRoomStore, useBoardStore } from '../../../hooks'
+import { EduMediaStream } from '../../../stores/app/room'
+import { t } from '../../../i18n'
+import { ChatPanel } from '../../../components/chat/panel'
+import { StudentList } from '../../../components/student-list'
 
 export const AssistantChatBoard = observer(() => {
   const breakoutRoomStore = useBreakoutRoomStore()

@@ -1,10 +1,10 @@
-import { getIntlError } from "@/services/intl-error-helper";
+import { getIntlError } from "../../../../services/intl-error-helper";
 import { AgoraFetch } from "../utils/fetch";
 import OSS from "ali-oss";
 import md5 from "js-md5";
-import { t } from "@/i18n";
+import { t } from "../../../../i18n";
 import { get } from "lodash";
-import { AUTHORIZATION, APP_ID } from "@/utils/config";
+import { AUTHORIZATION, APP_ID } from "../../../../utils/config";
 
 const AgoraFetchJson = async ({url, method, data, token, outHeaders}:{url?: string, method: string, data?: any, token?: string, outHeaders?: any}) => {  
   const opts: any = {

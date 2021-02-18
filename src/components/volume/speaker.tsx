@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {CustomIcon} from '@/components/icon';
+import {CustomIcon} from '../../components/icon';
 import { makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 

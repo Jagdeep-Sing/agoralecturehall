@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { IMediaRenderer } from '@/sdk/education/core/media-service/renderer'
+import { IMediaRenderer } from '../../sdk/education/core/media-service/renderer'
 
 interface RendererPlayerProps {
   preview?: boolean

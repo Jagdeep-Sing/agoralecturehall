@@ -1,7 +1,7 @@
 import { AgoraFetchParams } from "../../interfaces";
 import { get } from "lodash";
 import { BoardInfoResponse } from "./interface";
-import { APP_ID, AUTHORIZATION } from "@/utils/config";
+import { APP_ID, AUTHORIZATION } from "../../../../utils/config";
 import { HttpClient } from "../utils/http-client";
 
 export class AgoraBoardApi {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { CustomIcon } from "../icon"
 import './index.scss'
-import { useRoomStore } from '@/hooks'
+import { useRoomStore } from '../../hooks'
 import { RendererPlayer } from '../media-player'
 
 type VideoPlayerProps = {

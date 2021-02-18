@@ -1,11 +1,11 @@
-import { AppStore } from '@/stores/app/index';
+import { AppStore } from '../../stores/app/index';
 import { AgoraWebRtcWrapper } from '../../sdk/education/core/media-service/web/index';
 import { MediaService } from '../../sdk/education/core/media-service/index';
 import { IMicrophoneAudioTrack } from 'agora-rtc-sdk-ng';
 import { observable, computed, action, runInAction } from 'mobx';
-import { AgoraElectronRTCWrapper } from '@/sdk/education/core/media-service/electron';
-import { StartScreenShareParams, PrepareScreenShareParams } from '@/sdk/education/core/media-service/interfaces';
-import { LocalUserRenderer } from '@/sdk/education/core/media-service/renderer';
+import { AgoraElectronRTCWrapper } from '../../sdk/education/core/media-service/electron';
+import { StartScreenShareParams, PrepareScreenShareParams } from '../../sdk/education/core/media-service/interfaces';
+import { LocalUserRenderer } from '../../sdk/education/core/media-service/renderer';
 
 export class DeviceStore {
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import { observer } from 'mobx-react'
-import { useUIStore, useDeviceStore } from '@/hooks'
-import { CustomButton } from '@/components/custom-button'
+import { useUIStore, useDeviceStore } from '../../../hooks'
+import { CustomButton } from '../../../components/custom-button'
 import { useLocation, useHistory } from 'react-router-dom'
-import { t } from '@/i18n';
+import { t } from '../../../i18n';
 
 export const TestReportPage = observer(() => {
 

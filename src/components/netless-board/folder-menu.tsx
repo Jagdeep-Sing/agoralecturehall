@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Tooltip, Input } from '@material-ui/core';
-import {CustomIcon} from '@/components/icon'; 
+import {CustomIcon} from '../../components/icon'; 
 import {observer} from 'mobx-react'
-import { useBoardStore } from '@/hooks';
+import { useBoardStore } from '../../hooks';
 
 const FolderMenuItem = (props: any) => {
 

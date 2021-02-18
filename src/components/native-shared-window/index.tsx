@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './native-shared-window.scss';
-import {CustomButton} from '@/components/custom-button';
-import { useRoomStore } from '@/hooks'
+import {CustomButton} from '../../components/custom-button';
+import { useRoomStore } from '../../hooks'
 import { observer } from 'mobx-react';
 
 export const WindowItem: React.FC<any> = ({

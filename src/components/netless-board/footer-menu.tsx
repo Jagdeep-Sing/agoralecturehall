@@ -1,8 +1,8 @@
 import React from 'react';
 import { Tooltip } from '@material-ui/core';
-import { t } from '@/i18n';
+import { t } from '../../i18n';
 import { ControlItem } from '../control-item';
-import { useBoardStore, useRoomStore, useBreakoutRoomStore } from '@/hooks';
+import { useBoardStore, useRoomStore, useBreakoutRoomStore } from '../../hooks';
 import {observer} from 'mobx-react';
 import ScaleController from './scale-controller';
 import { useLocation } from 'react-router-dom';

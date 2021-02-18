@@ -3,10 +3,10 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import { observer } from "mobx-react";
-import VoiceVolume from '@/components/volume/voice';
-import { useDeviceStore, useUIStore } from '@/hooks';
-import { CustomButton } from '@/components/custom-button';
-import { t } from '@/i18n';
+import VoiceVolume from '../../../components/volume/voice';
+import { useDeviceStore, useUIStore } from '../../../hooks';
+import { CustomButton } from '../../../components/custom-button';
+import { t } from '../../../i18n';
 
 export const AudioPage = observer((props: any) => {
 

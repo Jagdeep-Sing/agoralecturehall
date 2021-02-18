@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 import { Link } from 'react-router-dom';
-import { t } from '@/i18n';
+import { t } from '../../i18n';
 interface MessageProps {
   nickname: string
   content: string

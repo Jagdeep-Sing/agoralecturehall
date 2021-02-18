@@ -6,20 +6,20 @@ import { EduRecordService } from './../../sdk/record/edu-record-service';
 import { EduAudioSourceType, EduTextMessage, EduSceneType } from './../../sdk/education/interfaces/index';
 import { RemoteUserRenderer } from './../../sdk/education/core/media-service/renderer/index';
 import { RoomApi } from './../../services/room-api';
-import { EduClassroomManager } from '@/sdk/education/room/edu-classroom-manager';
-import { PeerInviteEnum } from '@/sdk/education/user/edu-user-service';
+import { EduClassroomManager } from '../../sdk/education/room/edu-classroom-manager';
+import { PeerInviteEnum } from '../../sdk/education/user/edu-user-service';
 import { LocalUserRenderer, UserRenderer } from '../../sdk/education/core/media-service/renderer/index';
-import { AppStore } from '@/stores/app/index';
+import { AppStore } from '../../stores/app/index';
 import { AgoraWebRtcWrapper } from '../../sdk/education/core/media-service/web/index';
 import { observable, computed, action, runInAction } from 'mobx';
-import { AgoraElectronRTCWrapper } from '@/sdk/education/core/media-service/electron';
-import { StartScreenShareParams, PrepareScreenShareParams } from '@/sdk/education/core/media-service/interfaces';
-import { MediaService } from '@/sdk/education/core/media-service';
+import { AgoraElectronRTCWrapper } from '../../sdk/education/core/media-service/electron';
+import { StartScreenShareParams, PrepareScreenShareParams } from '../../sdk/education/core/media-service/interfaces';
+import { MediaService } from '../../sdk/education/core/media-service';
 import { get } from 'lodash';
-import { EduCourseState, EduUser, EduStream, EduVideoSourceType, EduRoleType } from '@/sdk/education/interfaces';
-import { ChatMessage } from '@/utils/types';
-import { t } from '@/i18n';
-import { DialogType } from '@/components/dialog';
+import { EduCourseState, EduUser, EduStream, EduVideoSourceType, EduRoleType } from '../../sdk/education/interfaces';
+import { ChatMessage } from '../../utils/types';
+import { t } from '../../i18n';
+import { DialogType } from '../../components/dialog';
 
 const delay = 2000
 

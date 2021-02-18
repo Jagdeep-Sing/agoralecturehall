@@ -4,24 +4,24 @@ import { EduRecordService } from '../../sdk/record/edu-record-service';
 import { EduAudioSourceType, EduTextMessage, EduClassroomStateType, EduSceneType } from '../../sdk/education/interfaces/index';
 import { RemoteUserRenderer } from '../../sdk/education/core/media-service/renderer/index';
 import { RoomApi } from '../../services/room-api';
-import { EduClassroomManager } from '@/sdk/education/room/edu-classroom-manager';
+import { EduClassroomManager } from '../../sdk/education/room/edu-classroom-manager';
 import { GlobalStorage } from '../../utils/custom-storage';
 import { NetworkQuality } from '../../sdk/education/user/edu-student-service';
-import { EduUserService, PeerInviteEnum } from '@/sdk/education/user/edu-user-service';
+import { EduUserService, PeerInviteEnum } from '../../sdk/education/user/edu-user-service';
 import { LocalUserRenderer, UserRenderer } from '../../sdk/education/core/media-service/renderer/index';
-import { AppStore } from '@/stores/app/index';
+import { AppStore } from '../../stores/app/index';
 import { AgoraWebRtcWrapper } from '../../sdk/education/core/media-service/web/index';
 import { toJS, observable, computed, action, runInAction, autorun } from 'mobx';
-import { AgoraElectronRTCWrapper } from '@/sdk/education/core/media-service/electron';
-import { StartScreenShareParams, PrepareScreenShareParams } from '@/sdk/education/core/media-service/interfaces';
-import { MediaService } from '@/sdk/education/core/media-service';
+import { AgoraElectronRTCWrapper } from '../../sdk/education/core/media-service/electron';
+import { StartScreenShareParams, PrepareScreenShareParams } from '../../sdk/education/core/media-service/interfaces';
+import { MediaService } from '../../sdk/education/core/media-service';
 import { debounce, get } from 'lodash';
-import { EduCourseState, EduUser, EduStream, EduVideoSourceType, EduRoleType } from '@/sdk/education/interfaces';
-import { ChatMessage } from '@/utils/types';
-import { t } from '@/i18n';
+import { EduCourseState, EduUser, EduStream, EduVideoSourceType, EduRoleType } from '../../sdk/education/interfaces';
+import { ChatMessage } from '../../utils/types';
+import { t } from '../../i18n';
 import { SimpleInterval } from '../mixin/simple-interval';
-import { DialogType } from '@/components/dialog';
-import { Mutex } from '@/utils/mutex';
+import { DialogType } from '../../components/dialog';
+import { Mutex } from '../../utils/mutex';
 
 const delay = 2000
 

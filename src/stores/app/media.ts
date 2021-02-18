@@ -1,8 +1,8 @@
-import { AppStore } from '@/stores/app';
+import { AppStore } from '../../stores/app';
 import { debounce } from 'lodash';
-import { t } from '@/i18n';
+import { t } from '../../i18n';
 import { observable, action, computed } from 'mobx';
-import { LocalUserRenderer } from '@/sdk/education/core/media-service/renderer';
+import { LocalUserRenderer } from '../../sdk/education/core/media-service/renderer';
 
 const delay = 2000
 

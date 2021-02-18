@@ -1,7 +1,7 @@
 import React from 'react';
 import { Board } from './board';
 import { observer } from 'mobx-react';
-import { useBoardStore } from '@/hooks';
+import { useBoardStore } from '../../hooks';
 
 export const NetlessBoard = observer((props: any) => {
 

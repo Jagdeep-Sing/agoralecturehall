@@ -1,12 +1,12 @@
 import React, {useRef, useState} from 'react';
-import {VideoPlayer} from '@/components/video-player';
-import { ControlItem } from '@/components/control-item';
+import {VideoPlayer} from '../../components/video-player';
+import { ControlItem } from '../../components/control-item';
 import './big-class.scss';
-import {ChatBoard} from '@/components/chat/board';
-import { NetlessBoard } from '@/components/netless-board';
-import { ScreenSharing } from '@/components/screen-sharing';
+import {ChatBoard} from '../../components/chat/board';
+import { NetlessBoard } from '../../components/netless-board';
+import { ScreenSharing } from '../../components/screen-sharing';
 import { observer } from 'mobx-react';
-import { useRoomStore } from '@/hooks';
+import { useRoomStore } from '../../hooks';
 
 export const BigClass = observer(() => {
 
@@ -72,6 +72,11 @@ export const BigClass = observer(() => {
             : null}
           </div>
         </div>
+        {
+        roomStore.userList.map((user, index) => (
+          <p key={index}>{user.userName}</p>
+        ))
+        }
         <div className="video-container">
           {studentStreams.map((studentStream: any, key: number) => (
             <VideoPlayer

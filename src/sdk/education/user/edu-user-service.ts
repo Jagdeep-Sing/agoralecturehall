@@ -1,6 +1,6 @@
 import { EduLogger } from './../core/logger/index';
 import { EduClassroomDataController } from './../room/edu-classroom-data-controller';
-import { EduClassroomManager } from '@/sdk/education/room/edu-classroom-manager';
+import { EduClassroomManager } from '../../../sdk/education/room/edu-classroom-manager';
 import { EventEmitter } from 'events';
 import { EduStreamData, EduVideoConfig, EduRoleType, EduVideoSourceType, EduAudioSourceType, EduCourseState, EduShareScreenConfig, EduUserData } from '../interfaces';
 import { EduRenderConfig, EduStream, EduUser, EduSubscribeOptions, EduStreamConfig } from '../interfaces';

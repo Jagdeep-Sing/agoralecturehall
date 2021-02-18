@@ -1,11 +1,11 @@
 import React from 'react';
 // import '../classroom/room.scss';
-import { isElectron } from '@/utils/platform';
+import { isElectron } from '../../utils/platform';
 // import '@/components/nav.scss';
 import { Tooltip } from '@material-ui/core';
-import { t } from '@/i18n';
-import {CustomIcon} from '@/components/icon';
-import { useUIStore } from '@/hooks';
+import { t } from '../../i18n';
+import {CustomIcon} from '../../components/icon';
+import { useUIStore } from '../../hooks';
 import {observer} from 'mobx-react';
 import { ReplayController } from './replay';
 

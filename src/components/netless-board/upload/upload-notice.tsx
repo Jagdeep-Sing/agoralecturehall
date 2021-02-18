@@ -2,8 +2,8 @@ import React from 'react';
 
 import './upload-notice.scss';
 import { observer } from 'mobx-react';
-import { useBoardStore } from '@/hooks';
-import { useTimeout } from '@/components/toast';
+import { useBoardStore } from '../../../hooks';
+import { useTimeout } from '../../../components/toast';
 
 const NoticeMessage: React.FC<any> = ({
   type,

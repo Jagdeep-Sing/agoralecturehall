@@ -1,14 +1,14 @@
 import React from 'react';
-import {CustomIcon} from '@/components/icon';
+import {CustomIcon} from '../../components/icon';
 import { Tooltip, ClickAwayListener } from '@material-ui/core';
 import {UploadBtn} from './upload/upload-btn'
 import { observer } from 'mobx-react';
-import { useBoardStore, useRoomStore } from '@/hooks';
-import { BoardStore } from '@/stores/app/board';
+import { useBoardStore, useRoomStore } from '../../hooks';
+import { BoardStore } from '../../stores/app/board';
 import { SketchPicker } from 'react-color';
-import { PPTProgressPhase } from '@/utils/upload-manager';
+import { PPTProgressPhase } from '../../utils/upload-manager';
 import { get } from 'lodash';
-import { t } from '@/i18n';
+import { t } from '../../i18n';
 
 
 const ToolItem = (props: any) => {

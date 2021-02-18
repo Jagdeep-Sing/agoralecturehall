@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react'
 import './replay.scss'
 import Slider from '@material-ui/core/Slider';
-import { useReplayStore } from '@/hooks'
+import { useReplayStore } from '../../hooks'
 import { useLocation, useParams } from 'react-router-dom'
 import { useMounted } from '../../components/toast'
 import { PlayerPhase } from 'white-web-sdk'
-import { Progress } from '@/components/progress/progress'
-import { t } from '@/i18n'
+import { Progress } from '../../components/progress/progress'
+import { t } from '../../i18n'
 import { observer } from 'mobx-react'
 import "video.js/dist/video-js.css";
 import moment from 'moment';

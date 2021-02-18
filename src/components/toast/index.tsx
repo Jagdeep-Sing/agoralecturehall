@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './toast.scss';
 import { observer } from 'mobx-react';
-import { useUIStore } from '@/hooks';
+import { useUIStore } from '../../hooks';
 
 export interface SnackbarMessage {
   message: string;

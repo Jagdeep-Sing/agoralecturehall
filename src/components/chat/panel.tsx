@@ -3,8 +3,8 @@ import {Message, RoomMessage} from './message';
 import { Input } from '@material-ui/core';
 import {CustomButton} from '../custom-button';
 import './panel.scss';
-import { ChatMessage } from '@/utils/types';
-import { t } from '@/i18n';
+import { ChatMessage } from '../../utils/types';
+import { t } from '../../i18n';
 import {observer} from 'mobx-react';
 
 export interface ChatPanelProps {

@@ -2,8 +2,8 @@ import { EduRecordService } from './../../sdk/record/edu-record-service';
 import { EduBoardService } from './../../sdk/board/edu-board-service';
 import { DeviceStore } from './device';
 import { UIStore } from './ui';
-import { EduManager } from '@/sdk/education/manager';
-import { EduUserService } from '@/sdk/education/user/edu-user-service';
+import { EduManager } from '../../sdk/education/manager';
+import { EduUserService } from '../../sdk/education/user/edu-user-service';
 import { BoardStore } from './board';
 import AgoraRTC from 'agora-rtc-sdk-ng';
 import { RoomStore } from './room';
@@ -12,16 +12,16 @@ import AgoraRTM from 'agora-rtm-sdk';
 import { ReplayStore } from './replay';
 import { BreakoutRoomStore } from './breakout-room';
 import { get } from 'lodash';
-import { GlobalStorage } from '@/utils/custom-storage';
+import { GlobalStorage } from '../../utils/custom-storage';
 import { autorun, toJS, observable, action, computed, runInAction } from 'mobx';
 import { MediaStore } from './media';
-import { EduClassroomManager } from '@/sdk/education/room/edu-classroom-manager';
-import { t } from '@/i18n';
-import { EduCourseState, EduStream } from '@/sdk/education/interfaces';
-import { LocalUserRenderer } from '@/sdk/education/core/media-service/renderer';
-import { PrepareScreenShareParams } from '@/sdk/education/core/media-service/interfaces';
-import { AgoraWebRtcWrapper } from '@/sdk/education/core/media-service/web';
-import { AgoraElectronRTCWrapper } from '@/sdk/education/core/media-service/electron';
+import { EduClassroomManager } from '../../sdk/education/room/edu-classroom-manager';
+import { t } from '../../i18n';
+import { EduCourseState, EduStream } from '../../sdk/education/interfaces';
+import { LocalUserRenderer } from '../../sdk/education/core/media-service/renderer';
+import { PrepareScreenShareParams } from '../../sdk/education/core/media-service/interfaces';
+import { AgoraWebRtcWrapper } from '../../sdk/education/core/media-service/web';
+import { AgoraElectronRTCWrapper } from '../../sdk/education/core/media-service/electron';
 
 // AgoraRTC.setLogLevel(4)
 

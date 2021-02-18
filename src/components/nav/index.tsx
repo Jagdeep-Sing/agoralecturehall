@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { CustomIcon } from '@/components/icon';
+import { CustomIcon } from '../../components/icon';
 import './nav.scss';
-import { CustomButton } from '@/components/custom-button';
+import { CustomButton } from '../../components/custom-button';
 import * as moment from 'moment';
-import { isElectron, platform } from '@/utils/platform';
-// import Log from '@/utils/LogUploader';
+import { isElectron, platform } from '../../utils/platform';
+// import Log from '../../utils/LogUploader';
 import { Tooltip } from '@material-ui/core';
-import { useUIStore, useRoomStore, useAppStore, useMediaStore, useBreakoutRoomStore } from '@/hooks';
-import { t } from '@/i18n';
+import { useUIStore, useRoomStore, useAppStore, useMediaStore, useBreakoutRoomStore } from '../../hooks';
+import { t } from '../../i18n';
 import { observer } from 'mobx-react';
 import { useLocation } from 'react-router-dom';
-import { networkQualities as networkQualityIcon } from '@/stores/app/room'
-import { EduManager } from '@/sdk/education/manager';
+import { networkQualities as networkQualityIcon } from '../../stores/app/room'
+import { EduManager } from '../../sdk/education/manager';
 
 interface NavProps {
   delay: string

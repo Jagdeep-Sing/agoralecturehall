@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { ChatPanel } from '@/components/chat/panel';
-import { StudentList } from '@/components/student-list';
-import { t } from '@/i18n';
+import { ChatPanel } from '../../../components/chat/panel';
+import { StudentList } from '../../../components/student-list';
+import { t } from '../../../i18n';
 import { observer } from 'mobx-react'
-import { useBreakoutRoomStore } from '@/hooks';
+import { useBreakoutRoomStore } from '../../../hooks';
 import { TeacherChatBoard } from './teacher-chat-board';
 import { StudentChatBoard } from './student-chat-board';
 import { AssistantChatBoard } from './assistant-chat-board';

@@ -5,7 +5,7 @@ import { FooterMenu } from './footer-menu';
 import { FolderMenu } from './folder-menu';
 // import 'white-web-sdk/style/index.css';
 import { observer } from 'mobx-react';
-import { useBoardStore } from '@/hooks';
+import { useBoardStore } from '../../hooks';
 import { UploadNotice } from './upload/upload-notice';
 import './netless-whiteboard.scss';
 

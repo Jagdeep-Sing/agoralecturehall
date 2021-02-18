@@ -2,7 +2,7 @@ import {IAgoraRtcEngine} from './types/agora_sdk'
 import { EventEmitter } from 'events';
 import { wait } from '../utils';
 import { IAgoraRTCModule, CameraOption, StartScreenShareParams, MicrophoneOption } from '../interfaces';
-import { CustomBtoa } from '@/utils/helper';
+import { CustomBtoa } from '../../../../../utils/helper';
 import { EduLogger } from '../../logger';
 
 interface IElectronRTCWrapper extends IAgoraRTCModule {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tooltip } from '@material-ui/core';
-import {t} from '@/i18n';
+import {t} from '../../i18n';
 
 export type ScaleControllerProps = {
   lockBoard: boolean

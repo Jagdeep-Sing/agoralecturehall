@@ -3,9 +3,9 @@ import {CustomButton} from '../custom-button';
 import {Dialog, DialogContent, DialogContentText} from '@material-ui/core';
 
 import './dialog.scss';
-import { t } from '@/i18n';
+import { t } from '../../i18n';
 import { observer } from 'mobx-react';
-import { useRoomStore, useUIStore, useBreakoutRoomStore } from '@/hooks';
+import { useRoomStore, useUIStore, useBreakoutRoomStore } from '../../hooks';
 import { useHistory, useLocation } from 'react-router-dom';
 
 export interface DialogMessage {

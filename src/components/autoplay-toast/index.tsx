@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'mobx-react'
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
-import { useUIStore } from '@/hooks'
+import { useUIStore } from '../../hooks'
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
 

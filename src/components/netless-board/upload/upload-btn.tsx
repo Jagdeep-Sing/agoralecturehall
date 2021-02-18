@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import {t} from '@/i18n';
+import {t} from '../../../i18n';
 import { observer } from 'mobx-react';
-import { useBoardStore } from '@/hooks';
+import { useBoardStore } from '../../../hooks';
 
 export const UploadBtn: React.FC<any> = observer(() => {
 

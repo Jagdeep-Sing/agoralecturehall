@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react'
 import { observer } from "mobx-react";
-import VoiceVolume from '@/components/volume/voice';
-import SpeakerVolume from '@/components/volume/speaker';
+import VoiceVolume from '../../../components/volume/voice';
+import SpeakerVolume from '../../../components/volume/speaker';
 import { useInterval } from 'react-use';
-import {CustomButton} from '@/components/custom-button';
-import { useDeviceStore, useUIStore } from '@/hooks';
-import { t } from '@/i18n';
+import {CustomButton} from '../../../components/custom-button';
+import { useDeviceStore, useUIStore } from '../../../hooks';
+import { t } from '../../../i18n';
 
 export const SpeakerPage = observer((props: any) => {
 

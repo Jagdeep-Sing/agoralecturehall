@@ -14,7 +14,7 @@ import {BigClass} from './classroom/big-class';
 import RoomDialog from '../components/dialog';
 import { ReplayPage } from './replay';
 import {Provider} from 'mobx-react';
-import { AppStore } from '@/stores/app';
+import { AppStore } from '../stores/app';
 import {AssistantCoursesPage} from './breakout-class/assistant-courses-page';
 
 const defaultStore = new AppStore()

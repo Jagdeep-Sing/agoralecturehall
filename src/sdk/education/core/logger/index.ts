@@ -1,6 +1,6 @@
 import { logApi } from "../services/log-upload";
 import { get } from "http";
-import { isElectron } from "@/utils/platform";
+import { isElectron } from "../../../../utils/platform";
 import db from "./db";
 import Dexie from "dexie";
 // eslint-disable

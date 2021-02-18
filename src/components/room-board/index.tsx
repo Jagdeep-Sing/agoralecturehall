@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import {ChatPanel} from '@/components/chat/panel';
-import {StudentList} from '@/components/student-list';
-import { t } from '@/i18n';
+import {ChatPanel} from '../../components/chat/panel';
+import {StudentList} from '../../components/student-list';
+import { t } from '../../i18n';
 import {observer} from 'mobx-react'
-import {useRoomStore, useBoardStore} from '@/hooks';
-import { EduMediaStream } from '@/stores/app/room';
+import {useRoomStore, useBoardStore} from '../../hooks';
+import { EduMediaStream } from '../../stores/app/room';
 
 const RoomBoardController = observer((props: any) => {
 

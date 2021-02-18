@@ -1,8 +1,8 @@
 import React from 'react';
 import { Progress } from '../progress/progress';
-import { t } from '@/i18n';
+import { t } from '../../i18n';
 import { observer } from 'mobx-react';
-import { useBoardStore } from '@/hooks';
+import { useBoardStore } from '../../hooks';
 
 export const BoardLoading = observer(() => {
   const boardStore = useBoardStore()

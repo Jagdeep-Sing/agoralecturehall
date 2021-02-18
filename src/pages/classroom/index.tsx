@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
-import {NavController} from '@/components/nav';
-import NativeSharedWindow from '@/components/native-shared-window';
+import {NavController} from '../../components/nav';
+import NativeSharedWindow from '../../components/native-shared-window';
 import { DeviceDetectController } from '../device-detect';
-import { AutoplayToast } from '@/components/autoplay-toast';
-import { useRoomStore, useUIStore, useAppStore } from '@/hooks';
-import { Loading } from '@/components/loading';
+import { AutoplayToast } from '../../components/autoplay-toast';
+import { useRoomStore, useUIStore, useAppStore } from '../../hooks';
+import { Loading } from '../../components/loading';
 import { observer } from 'mobx-react';
-import { t } from '@/i18n';
+import { t } from '../../i18n';
 
 import './room.scss';
 

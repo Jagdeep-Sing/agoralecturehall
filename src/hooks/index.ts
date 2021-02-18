@@ -10,8 +10,8 @@ import {
   BreakoutRoomStore,
   ReplayStore,
   RecordingStore
- } from '@/stores/app';
-
+ } from '../stores/app';
+ 
 export type appContext = Record<string, AppStore>
 
 export const useAppStore = (): AppStore => {

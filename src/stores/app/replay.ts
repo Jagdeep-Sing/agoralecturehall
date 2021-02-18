@@ -1,8 +1,8 @@
 import { EduRecordService } from './../../sdk/record/edu-record-service';
-import { BoardClient } from '@/components/netless-board/board-client';
-import { AppStore } from '@/stores/app';
+import { BoardClient } from '../../components/netless-board/board-client';
+import { AppStore } from '../../stores/app';
 import { observable, action, computed } from "mobx";
-import { t } from '@/i18n';
+import { t } from '../../i18n';
 import { PlayerPhase } from 'white-web-sdk';
 
 const cdnPrefix = 'https://agora-adc-artifacts.oss-accelerate.aliyuncs.com'

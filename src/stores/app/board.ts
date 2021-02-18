@@ -1,16 +1,16 @@
 import { EnumBoardState } from './../../sdk/education/core/services/interface.d';
-import { UploadManager, PPTProgressListener } from '@/utils/upload-manager';
-import { AppStore } from '@/stores/app';
+import { UploadManager, PPTProgressListener } from '../../utils/upload-manager';
+import { AppStore } from '../../stores/app';
 import { observable, action, computed, runInAction } from 'mobx'
-import { PPTProgressPhase } from '@/utils/upload-manager'
+import { PPTProgressPhase } from '../../utils/upload-manager'
 import { Room, PPTKind, ViewMode } from 'white-web-sdk'
-import { BoardClient } from '@/components/netless-board/board-client';
+import { BoardClient } from '../../components/netless-board/board-client';
 import { get, isEmpty, omit } from 'lodash';
-import { OSSConfig } from '@/utils/helper';
+import { OSSConfig } from '../../utils/helper';
 import OSS from 'ali-oss';
 import uuidv4 from 'uuid/v4';
-import { t } from '@/i18n';
-import { EduUser, EduRoleType } from '@/sdk/education/interfaces';
+import { t } from '../../i18n';
+import { EduUser, EduRoleType } from '../../sdk/education/interfaces';
 
 export const resolveFileInfo = (file: any) => {
   const fileName = encodeURI(file.name);

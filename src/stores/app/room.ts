@@ -1675,11 +1675,12 @@ export class RoomStore extends SimpleInterval {
     if (isExists) {
       return
     }
-    this.appStore.uiStore.showDialog({
-      type: 'apply',
-      userUuid: userUuid,
-      message: `${userName}` + t('icon.requests_to_connect_the_microphone')
-    })
+    this.teacherAcceptApply();
+    // this.appStore.uiStore.showDialog({
+    //   type: 'apply',
+    //   userUuid: userUuid,
+    //   message: `${userName}` + t('icon.requests_to_connect_the_microphone')
+    // })
   }
 
   removeDialogBy(userUuid: any) {
